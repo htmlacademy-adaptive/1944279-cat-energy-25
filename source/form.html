@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="logo" href="#">
+      <img class="logo-image" src="img/logo-mobile.svg" alt="Логотип магазина «Кэт энерджи»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item menu-list__item--active">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="content">
+      <div class="content__wrapper">
+        <h1 class="content__title">Подбор программы</h1>
+        <p class="content__subtitle">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+      </div>
+    </section>
+    <section class="pofile">
+      <form class="pofile__form data-field" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="data-field__wrapper">
+          <fieldset class="data-field">
+            <legend class="visually-hidden">Данные кота</legend>
+            <div class="data-field__row">
+              <label class="field" for="name">
+                <span class="field__title">Имя:<sup>*</sup>:</span>
+                <input class="field__text" type="text" id="name" value="Барсик" required>
+              </label>
+            </div>
+            <div class="data-field__row">
+              <label class="field" for="weight">
+                <span class="field__title">Вес (кг):<sup>*</sup>:</span>
+                <input class="field__text" type="text" id="weight" value="7" required>
+              </label>
+            </div>
+            <div class="data-field__row">
+              <label class="field" for="age">
+                <span class="field__title">Возраст (лет):</span>
+                <input class="field__text" type="text" id="age" value="7">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="data-field">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <div class="data-field__row">
+              <input type="radio" id="radio-1" name="select" value="slim" checked>
+              <label class="field" for="radio-1">Похудение</label>
+            </div>
+            <div class="data-field__row">
+              <input type="radio" id="radio-2" name="select" value="weight">
+              <label class="field" for="radio-2">Набор массы</label>
+            </div>
+            <div class="data-field__row">
+              <input type="radio" id="radio-3" name="select" value="help">
+              <label class="field" for="radio-3">Не знаю (Нужен ваш совет)</label>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <div class="content">
+            <h2 class="content__title">Контактные данные (владельца кота)</h2>
+          </div>
+          <fieldset class="data-field">
+            <div class="data-field__row">
+              <label class="field" for="email">E-mail:
+                <input class="field__text" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+                <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="#222" stroke-width="1.3"
+                    d="M1.6 5.8v8m17-8v8M1 13.2h18M1 1.2h18M18.4 3 10 9.5 1.7 3V1.5h16.7V3Z" />
+                </svg>
+              </label>
+            </div>
+            <div class="data-field__row">
+              <label class="field" for="phone">Телефон:*
+                <input class="field__text" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)" fill="#000">
+                    <path
+                      d="M17.9 9.8H9.4V11h8.5l-2.1 2 .9 1 3.1-3.1a.8.8 0 0 0 0-1l-3.1-3-.9.8 2.1 2Zm-9.8 10v-6.2a.7.7 0 0 0-.6-.6H3.1a1.2 1.2 0 0 0 1.2 1.2h2.5v5H3.1a1.8 1.8 0 0 1-1.9-1.7v-14a1.8 1.8 0 0 1 1.7-1.9h3.9v5H4.4a1.2 1.2 0 0 0-1.2 1.2h4.4a.6.6 0 0 0 .6-.6V1a.9.9 0 0 0-.7-.6H3.1a3 3 0 0 0-3.1 3v13.9a3 3 0 0 0 2.9 3h4.6a.5.5 0 0 0 .6-.4Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" transform="translate(0 .3)" d="M0 0h20v20.1H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <div class="content">
+            <h2 class="content__title">Комментарий</h2>
+          </div>
+          <label class="field" for="comment">
+            <textarea name="comment" id="comment" cols="50" rows="10"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </div>
+        <div class="content">
+          <h2 class="content__title">Дополнительно</h2>
+        </div>
+        <fieldset>
+          <div class="data-field__row">
+            <input type="checkbox" id="checkbox-1" name="select" value="Сахарозаменитель" checked>
+            <label class="field" for="checkbox-1">Сахарозаменитель</label>
+          </div>
+          <div class="data-field__row">
+            <input type="checkbox" id="checkbox-2" name="select" value="Молоко">
+            <label class="field" for="checkbox-2">Молоко</label>
+          </div>
+          <div class="data-field__row">
+            <input type="checkbox" id="checkbox-3" name="select" value="Питьевая вода">
+            <label class="field" for="checkbox-3">Питьевая вода</label>
+          </div>
+          <div class="data-field__row">
+            <input type="checkbox" id="checkbox-4" name="select" value="Витамины">
+            <label class="field" for="checkbox-4">Витамины</label>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <section class="contacts">
+    <div class="contacts__wrapper">
+      <h3 class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</h3>
+      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8
+        Санкт-Петербург</p>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <a class="logo" href="index.html">
+        <img class="logo-text" src="img/logo-text.svg" alt="Логотип-текст «Кэт энерджи»">
+      </a>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <img class="copyright__logo" src="img/htmlacademy.svg" alt="Логотип htmlacademy">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
