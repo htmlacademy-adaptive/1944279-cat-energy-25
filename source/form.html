@@ -15,7 +15,7 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list menu-list">
-          <li class="menu-list__item menu-list__item--active">
+          <li class="menu-list__item">
             <a href="index.html">
               Главная
             </a>
@@ -25,7 +25,7 @@
               Каталог продукции
             </a>
           </li>
-          <li class="menu-list__item">
+          <li class="menu-list__item menu-list__item--active">
             <a href="form.html">
               Подбор программы
             </a>
@@ -43,62 +43,62 @@
       </div>
     </section>
     <section class="pofile">
-      <form class="pofile__form data-field" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="data-field__wrapper">
-          <fieldset class="data-field">
+      <form class="pofile__form form-field" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form-field__wrapper">
+          <fieldset class="form-field__group">
             <legend class="visually-hidden">Данные кота</legend>
-            <div class="data-field__row">
+            <div class="form-field__row">
               <label class="field" for="name">
                 <span class="field__title">Имя:<sup>*</sup>:</span>
                 <input class="field__text" type="text" id="name" value="Барсик" required>
               </label>
             </div>
-            <div class="data-field__row">
+            <div class="form-field__row">
               <label class="field" for="weight">
                 <span class="field__title">Вес (кг):<sup>*</sup>:</span>
                 <input class="field__text" type="text" id="weight" value="7" required>
               </label>
             </div>
-            <div class="data-field__row">
+            <div class="form-field__row">
               <label class="field" for="age">
                 <span class="field__title">Возраст (лет):</span>
                 <input class="field__text" type="text" id="age" value="7">
               </label>
             </div>
           </fieldset>
-          <fieldset class="data-field">
+          <fieldset class="form-field__group">
             <legend class="visually-hidden">Выбор программы</legend>
-            <div class="data-field__row">
-              <input type="radio" id="radio-1" name="select" value="slim" checked>
+            <div class="form-field__row">
+              <input class="form-field__radio" type="radio" id="radio-1" name="program-select" value="slim" checked>
               <label class="field" for="radio-1">Похудение</label>
             </div>
-            <div class="data-field__row">
-              <input type="radio" id="radio-2" name="select" value="weight">
+            <div class="form-field__row">
+              <input class="form-field__radio" type="radio" id="radio-2" name="program-select" value="weight">
               <label class="field" for="radio-2">Набор массы</label>
             </div>
-            <div class="data-field__row">
-              <input type="radio" id="radio-3" name="select" value="help">
+            <div class="form-field__row">
+              <input class="form-field__radio" type="radio" id="radio-3" name="program-select" value="support">
               <label class="field" for="radio-3">Не знаю (Нужен ваш совет)</label>
             </div>
           </fieldset>
         </div>
         <div>
-          <div class="content">
-            <h2 class="content__title">Контактные данные (владельца кота)</h2>
-          </div>
-          <fieldset class="data-field">
-            <div class="data-field__row">
+          <fieldset class="form-field">
+            <div class="content">
+              <h2 class="content__title">Контактные данные (владельца кота)</h2>
+            </div>
+            <div class="form-field__row">
               <label class="field" for="email">E-mail:
-                <input class="field__text" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+                <input class="field__text" type="email" id="email" value="kuklachev@gmail.com" required>
                 <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="#222" stroke-width="1.3"
                     d="M1.6 5.8v8m17-8v8M1 13.2h18M1 1.2h18M18.4 3 10 9.5 1.7 3V1.5h16.7V3Z" />
                 </svg>
               </label>
             </div>
-            <div class="data-field__row">
+            <div class="form-field__row">
               <label class="field" for="phone">Телефон:*
-                <input class="field__text" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="field__text" type="tel" id="phone" value="8 (960) 900-60-90" required>
                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)" fill="#000">
                     <path
@@ -114,7 +114,7 @@
             </div>
           </fieldset>
         </div>
-        <div>
+        <fieldset>
           <div class="content">
             <h2 class="content__title">Комментарий</h2>
           </div>
@@ -122,28 +122,34 @@
             <textarea name="comment" id="comment" cols="50" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
-        </div>
+        </fieldset>
         <div class="content">
           <h2 class="content__title">Дополнительно</h2>
         </div>
         <fieldset>
-          <div class="data-field__row">
-            <input type="checkbox" id="checkbox-1" name="select" value="Сахарозаменитель" checked>
-            <label class="field" for="checkbox-1">Сахарозаменитель</label>
+          <div class="form-field__row">
+            <input class="form-field__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
+            <label class="field" for="sweetener">Сахарозаменитель</label>
           </div>
-          <div class="data-field__row">
-            <input type="checkbox" id="checkbox-2" name="select" value="Молоко">
-            <label class="field" for="checkbox-2">Молоко</label>
+          <div class="form-field__row">
+            <input class="form-field__checkbox" type="checkbox" id="milk" name="milk">
+            <label class="field" for="milk">Молоко</label>
           </div>
-          <div class="data-field__row">
-            <input type="checkbox" id="checkbox-3" name="select" value="Питьевая вода">
-            <label class="field" for="checkbox-3">Питьевая вода</label>
+          <div class="form-field__row">
+            <input class="form-field__checkbox" type="checkbox" id="water" name="water">
+            <label class="field" for="water">Питьевая вода</label>
           </div>
-          <div class="data-field__row">
-            <input type="checkbox" id="checkbox-4" name="select" value="Витамины">
-            <label class="field" for="checkbox-4">Витамины</label>
+          <div class="form-field__row">
+            <input class="form-field__checkbox" type="checkbox" id="vitamin" name="vitamin">
+            <label class="field" for="vitamin">Витамины</label>
           </div>
         </fieldset>
+        <div class="form-field__row">
+          <button class="form-field__button button" type="submit">Отправить заявку</button>
+          <p class="form-field__required">
+            <small>* — Обязательные поля</small>
+          </p>
+        </div>
       </form>
     </section>
   </main>
