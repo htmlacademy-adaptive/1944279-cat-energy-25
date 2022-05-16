@@ -1,5 +1,20 @@
 .series__wrapper {
+  height: 552px;
   padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .series__wrapper {
+    height: 774px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .series__wrapper {
+    height: 374px;
+    padding: 0 110px;
+  }
 }
 
 .series__list {
@@ -10,7 +25,6 @@
 
 .series__item {
   margin-bottom: 20px;
-  padding: 24px 33px 22px 20px;
   width: 280px;
   background-color: @basic-grey;
 }
