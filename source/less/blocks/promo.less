@@ -1,26 +1,14 @@
 .promo__wrapper {
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
-  height: 480px;
   margin-bottom: 20px;
-  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .promo__wrapper{
     background-image: none;
-    padding: 0 30px;
-    height: 609px;
   }
 }
-
-@media (min-width:@desktop-width) {
-  .promo__wrapper {
-    padding: 0 110px;
-    height: 696px;
-  }
-}
-
 
 .promo__title {
   margin-bottom: 25px;
@@ -32,10 +20,26 @@
   color: @white;
 }
 
+@media (min-width: @tablet-width) {
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+  }
+}
+
 .promo__slogan {
   margin-bottom: 29px;
   text-transform: uppercase;
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+  }
 }
 
 .promo__link {

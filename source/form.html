@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper">
+    <div class="main-header__wrapper container">
       <a class="main-header__logo" href="#">
         <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="65"
           alt="Логотип магазина «Кэт энерджи»">
@@ -41,7 +41,7 @@
   </header>
   <main class="main-container">
     <section class="program-selection">
-      <div class="program-selection-wrapper">
+      <div class="program-selection-wrapper container">
         <h1 class="program-selection__title">Подбор программы</h1>
         <p class="program-selection__subtitle">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
@@ -49,7 +49,7 @@
     </section>
     <section class="pofile">
       <form class="pofile__form form-field" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form-field__wrapper">
+        <div class="form-field__wrapper container">
           <fieldset class="form-field__group form-field__info-cat">
             <legend class="visually-hidden">Данные кота</legend>
             <div class="form-field__row">
@@ -87,7 +87,7 @@
             </div>
           </fieldset>
         </div>
-        <div>
+        <div class="container">
           <fieldset class="form-field__group form-field__contact-details">
             <h2 class="form-field__legend">Контактные данные (владельца кота)</h2>
             <div class="form-field__row">
@@ -117,32 +117,36 @@
             </div>
           </fieldset>
         </div>
-        <fieldset class="form-field__group form-field__comment">
-          <legend class="form-field__legend">Комментарий</legend>
-          <label class="visually-hidden" for="comment">Характер кота</label>
-          <textarea class="form-field__textarea" name="comment" id="comment" cols="50" rows="10"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset class="form-field__group form-field__additionally">
-          <h2 class="form-field__legend">Дополнительно</h2>
-          <div class="form-field__row">
-            <input class="form-field__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
-            <label class="form-field__checkbox-label" for="sweetener">Сахарозаменитель</label>
-          </div>
-          <div class="form-field__row">
-            <input class="form-field__checkbox" type="checkbox" id="milk" name="milk">
-            <label class="form-field__checkbox-label" for="milk">Молоко</label>
-          </div>
-          <div class="form-field__row">
-            <input class="form-field__checkbox" type="checkbox" id="water" name="water">
-            <label class="form-field__checkbox-label" for="water">Питьевая вода</label>
-          </div>
-          <div class="form-field__row">
-            <input class="form-field__checkbox" type="checkbox" id="vitamin" name="vitamin">
-            <label class="form-field__checkbox-label" for="vitamin">Витамины</label>
-          </div>
-        </fieldset>
-        <div class="form-field__row">
+        <div class="container">
+          <fieldset class="form-field__group form-field__comment">
+            <legend class="form-field__legend">Комментарий</legend>
+            <label class="visually-hidden" for="comment">Характер кота</label>
+            <textarea class="form-field__textarea" name="comment" id="comment" cols="50" rows="10"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+        </div>
+        <div class="container">
+          <fieldset class="form-field__group form-field__additionally">
+            <h2 class="form-field__legend">Дополнительно</h2>
+            <div class="form-field__row">
+              <input class="form-field__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
+              <label class="form-field__checkbox-label" for="sweetener">Сахарозаменитель</label>
+            </div>
+            <div class="form-field__row">
+              <input class="form-field__checkbox" type="checkbox" id="milk" name="milk">
+              <label class="form-field__checkbox-label" for="milk">Молоко</label>
+            </div>
+            <div class="form-field__row">
+              <input class="form-field__checkbox" type="checkbox" id="water" name="water">
+              <label class="form-field__checkbox-label" for="water">Питьевая вода</label>
+            </div>
+            <div class="form-field__row">
+              <input class="form-field__checkbox" type="checkbox" id="vitamin" name="vitamin">
+              <label class="form-field__checkbox-label" for="vitamin">Витамины</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-field__row container">
           <button class="form-field__button button" type="submit">Отправить заявку</button>
           <p class="form-field__required">
             <small>* — Обязательные поля</small>
@@ -159,7 +163,7 @@
     </div>
   </section>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper container">
       <a class="footer-logo" href="index.html">
         <img class="logo-text" src="img/footer-logo.svg" alt="Логотип «Кэт энерджи»">
       </a>
