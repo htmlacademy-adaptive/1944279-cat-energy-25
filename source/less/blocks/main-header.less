@@ -1,4 +1,43 @@
-.header-logo {
-  margin: 0;
-  padding: 0 20px;
+.main-header__wrapper {
+  display: flex;
+}
+
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    margin-top: 53px;
+    margin-bottom: 29px;
+  }
+}
+
+.main-header__logo {
+  height: 66px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    height: 51px;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .main-header__logo {
+    height: 59px;
+  }
 }

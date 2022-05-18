@@ -2,13 +2,17 @@
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
   margin-bottom: 20px;
-  padding-top: 27px;
-  padding-right: 35px;
-  padding-left: 36px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__wrapper{
+    background-image: none;
+  }
 }
 
 .promo__title {
   margin-bottom: 25px;
+  width: 249px;
   font-family: @primary;
   font-weight: 400;
   font-size: 36px;
@@ -16,10 +20,26 @@
   color: @white;
 }
 
+@media (min-width: @tablet-width) {
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+  }
+}
+
 .promo__slogan {
   margin-bottom: 29px;
   text-transform: uppercase;
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+  }
 }
 
 .promo__link {
