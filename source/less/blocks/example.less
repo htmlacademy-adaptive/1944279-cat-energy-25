@@ -2,7 +2,16 @@
   background-color: @gray-light;
 }
 
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: @white;
+  }
+}
+
+
+
 .example__title {
+  margin: 0;
   margin-bottom: 40px;
   padding-top: 25px;
   font-size: 36px;
@@ -10,26 +19,116 @@
   font-weight: 400;
 }
 
+@media (min-width: @tablet-width) {
+  .example__title {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .example__description {
+  font-family: @secondary;
+  margin: 0;
   margin-bottom: 20px;
-  color: @special-dark-grey;
+  color: @gray-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .example__description {
+    width: 435px;
+  }
 }
 
 .example__list {
-  margin: 0 0 0 34px;
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-template-rows: 56px;
+  gap: 0px 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__list {
+    grid-template-columns: 162px 162px;
+    grid-template-rows: 72px;
+    gap: 0px 42px;
+  }
+}
+
+.example__item {
+  position: relative;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
 }
 
 .example__number {
+  padding-top: 14px;
   font-size: 24px;
+  line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+
 .example__text {
+  position: absolute;
+  top: 44px;
+  right: 0px;
+  left: 0px;
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 19px;
+  font-family: @secondary;
   font-size: 12px;
-  color: @special-dark-grey;
+  line-height: 12px;
+  width: 77px;
+  color: @gray-dark;
+  background-color: @gray-light;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .example__text {
+    top: 64px;
+    width: 114px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @white;
+  }
 }
 
 .example__price {
+  margin: 0;
+  padding-top: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    flex-direction: column;
+  }
 }
