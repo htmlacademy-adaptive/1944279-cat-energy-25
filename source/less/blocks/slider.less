@@ -1,5 +1,38 @@
+.slider__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
 .slider__text {
+  font-family: @primary;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
+}
+
+.slider__control {
+  border: none;
+  background-color: @gray-light;
+}
+
+.slider__toggle {
+  position: relative;
+  width: 86px;
+  height: 14px;
+  border: 1px solid #CDCDCD;
+  border-radius: 6px;
+  background-color: @white;
+}
+
+.slider__range {
+  position: absolute;
+  width: 37px;
+  height: 6px;
+  top: 3px;
+  left: 6px;
+  background: @basic-green;
+  border-radius: 6px;
 }

@@ -1,11 +1,42 @@
-@media (min-width: @tablet-width) {
-  .menu-list {
-    width: 440px;
+.menu-list a {
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  font-family: @primary;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: @black;
+  background-color: @white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 1px solid @gray-light-two;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .menu-list {
-    width: 478px;
+@media (min-width: @tablet-width) {
+  .menu-list a {
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
   }
+}
+
+.menu-list__item--active::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  bottom: 10px;
+  background-color: @basic-green;
 }
